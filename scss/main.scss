@@ -1,0 +1,138 @@
+@import "./imports/_normalize.scss";
+@import './_mixins.scss';
+@import './_variables.scss';
+* {
+   box-sizing: border-box;
+}
+body {
+   font-family: "Lato", sans-serif;
+}
+.padding-top{
+   margin-top: 40px;
+}
+img {
+   width: 100%;
+   display: block;
+}
+h1,
+h2,
+h3,
+h4 {
+   font-family: 'Electrolize', serif;
+}
+a {
+   display: block;
+   text-decoration: underline;
+}
+.bg-black {
+   color: #fff;
+   background: #000;
+}
+
+.nav {
+   background: $Primary;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   transition: all .3s;
+}
+.nav_hidden {
+   transform: translate(0, -50px);
+}
+
+.image_container {
+   @include bgCover('../images/pexels-photo-190574.jpeg', 100vh);
+   background-position: right;
+   font-size: 3em;
+}
+.title_container {
+   width: 80%;
+   padding: 20px;
+   h4 {
+      font-size: .9rem;
+      color: $Primary;
+   }
+}
+
+.about_section {
+   height: 100vh;
+   a{
+      color: #FFF;
+      text-decoration: underline;
+   }
+}
+.about_content {
+   padding: 20px;
+   text-align: center;
+   background: #000;
+   color: #fff;
+   h3 {
+      margin-top: 1em;
+      letter-spacing: 4px;
+   }
+   p {
+      font-size: .9em;
+   }
+   a {
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      font-size: .7em;
+   }
+}
+.work_header {
+   padding: 40px;
+   h3 {
+      margin: 0;
+      letter-spacing: 4px;
+   }
+}
+.header_fixed {
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
+.link {
+   margin: 10px;
+   font-size: 20px;
+   line-height: 20px;
+   width: 50px;
+   height: 50px;
+   text-decoration: none;
+}
+.work_section {
+   @include bgCover('../images/laptop-bg.jpeg', auto);
+   background-attachment: fixed;
+}
+
+.work_card {
+   margin: 20px;
+   -webkit-box-shadow: 9px 7px 38px -11px rgba(0,0,0,0.33);
+   -moz-box-shadow: 9px 7px 38px -11px rgba(0,0,0,0.33);
+   box-shadow: 9px 7px 38px -11px rgba(0,0,0,0.33);
+}
+.card_display {
+   padding: 30px;
+
+   a{
+      color: #000;
+   }
+}
+.card_description {
+   color: #fff;
+   background: $Primary;
+   a{
+      color: #FFF;
+   }
+}
+.card_header {
+   padding: 10px;
+   p {
+      margin: 0;
+   }
+}
+
+.sand_gray {
+   color: #000;
+   background: $Sand_gray;
+}

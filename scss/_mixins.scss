@@ -1,0 +1,7 @@
+
+
+@mixin bgCover($imageUrl, $vH) {
+   background: url($imageUrl)center center no-repeat;
+   background-size: cover;
+   height: $vH;
+}
