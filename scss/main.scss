@@ -42,7 +42,7 @@ a {
 }
 
 .image_container {
-   @include bgCover('../images/pexels-photo-190574.jpeg', 100vh);
+   @include bgCover('../images/engine-bg.jpeg', 100vh);
    background-position: right;
    font-size: 3em;
 }
@@ -117,7 +117,7 @@ a {
    a{
       color: #000;
    }
-   
+
 }
 .card_description {
    color: #fff;

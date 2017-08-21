@@ -403,7 +403,7 @@ a {
   transform: translate(0, -50px); }
 
 .image_container {
-  background: url("../images/pexels-photo-190574.jpeg") center center no-repeat;
+  background: url("../images/engine-bg.jpeg") center center no-repeat;
   background-size: cover;
   height: 100vh;
   background-position: right;
