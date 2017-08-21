@@ -397,7 +397,10 @@ a {
   width: 100%;
   top: 0;
   left: 0;
-  transition: all .3s; }
+  transition: all .3s;
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5); }
 
 .nav_hidden {
   transform: translate(0, -50px); }
@@ -464,9 +467,9 @@ a {
 
 .work_card {
   margin: 20px;
-  -webkit-box-shadow: 9px 7px 38px -11px rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: 9px 7px 38px -11px rgba(0, 0, 0, 0.33);
-  box-shadow: 9px 7px 38px -11px rgba(0, 0, 0, 0.33); }
+  -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5); }
 
 .card_display {
   padding: 30px; }
