@@ -81,19 +81,26 @@ a {
    text-align: center;
    background: #000;
    color: #fff;
+   p {
+      font-size: .9em;
+   }
+   @include tabletBreakpoint(){
+      p{
+         font-size: 1.2em;
+         line-height: 2;
+      }
+   }
    .content_image{
       @include tabletBreakpoint() {
          display: none;
       }
-      
+
    }
    h3 {
       margin-top: 1em;
       letter-spacing: 4px;
    }
-   p {
-      font-size: .9em;
-   }
+
    a {
       margin-bottom: 10px;
       letter-spacing: 2px;
@@ -154,4 +161,14 @@ a {
 .sand_gray {
    color: #000;
    background: $Sand_gray;
+}
+.footer{
+   padding: 10px;
+   letter-spacing: 4px;
+   a{
+      color: #000;
+   }
+   .footer_content{
+      margin: 0 auto;
+   }
 }
