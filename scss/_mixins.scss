@@ -10,3 +10,9 @@
    -moz-box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.5);
    box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.5);
 }
+@mixin desktopBreakpoint(){
+   @media (min-width: 960px){ @content;}
+}
+@mixin tabletBreakpoint(){
+   @media(min-width: 640px){ @content;}
+}
