@@ -419,11 +419,9 @@ a {
     font-size: .9rem;
     color: #28536C; }
 
-.about_section {
-  height: 100vh; }
-  .about_section a {
-    color: #FFF;
-    text-decoration: underline; }
+.about_section a {
+  color: #FFF;
+  text-decoration: underline; }
 
 .about_content {
   padding: 20px;
