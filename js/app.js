@@ -16,7 +16,7 @@ $(window).bind('mousewheel', function(event) {
    // }
 });
 $('.menu-link').click(function(e){
-   var offsetVal = -54;
+   var offsetVal = -41.5;
    var attr = $(this).attr('href');
    console.log(attr);
    console.log($(attr));
