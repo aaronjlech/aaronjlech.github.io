@@ -15,4 +15,15 @@ $(window).bind('mousewheel', function(event) {
    //    $('.work_header').removeClass('header_fixed')
    // }
 });
-console.log(window.scrollY, $('.work_header').position())
+$('.menu-link').click(function(e){
+   var offsetVal = -54;
+   var attr = $(this).attr('href');
+   console.log(attr);
+   console.log($(attr));
+    e.preventDefault();
+
+    $("body, html").animate({
+        scrollTop: $( attr ).offset().top + offsetVal
+    }, 800);
+
+})

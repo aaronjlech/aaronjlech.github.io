@@ -402,6 +402,26 @@ a {
   -webkit-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5); }
+  @media (min-width: 640px) {
+    .nav .mobile-button {
+      display: none; } }
+  .nav .tablet-menu {
+    display: none; }
+    @media (min-width: 640px) {
+      .nav .tablet-menu {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; } }
+  @media (min-width: 640px) {
+    .nav .mobile-menu {
+      display: none; } }
+  .nav a {
+    padding: .3rem .5rem;
+    color: #FFF;
+    transition: all .3s; }
+    .nav a:hover {
+      opacity: .6; }
 
 .nav_hidden {
   transform: translate(0, -50px); }
@@ -411,8 +431,10 @@ a {
   background-size: cover;
   height: 100vh;
   background-position: right;
-  background-attachment: fixed;
   font-size: 3em; }
+  @media (min-width: 640px) {
+    .image_container {
+      background-attachment: fixed; } }
 
 .title_container {
   min-width: 300px;
@@ -449,7 +471,7 @@ a {
     font-size: .9em; }
   @media (min-width: 640px) {
     .about_content p {
-      font-size: 1.2em;
+      font-size: 1em;
       line-height: 2; } }
   @media (min-width: 640px) {
     .about_content .content_image {
@@ -484,8 +506,10 @@ a {
 .work_section {
   background: url("../images/laptop-bg.jpeg") center center no-repeat;
   background-size: cover;
-  height: auto;
-  background-attachment: fixed; }
+  height: auto; }
+  @media (min-width: 640px) {
+    .work_section {
+      background-attachment: fixed; } }
 
 .work_card {
   margin: 20px;

@@ -2,7 +2,7 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>PROJECT</title>
+      <title>Aaron LeCheminant</title>
       <link href="https://fonts.googleapis.com/css?family=Electrolize|Lato" rel="stylesheet">
       <link rel="stylesheet" href="./css/lib/foundations.min.css">
       <link rel="stylesheet" href="./css/lib/font-awesome.min.css">
@@ -11,15 +11,12 @@
    </head>
    <body>
       <div class="title-bar nav">
-        <div class="title-bar-left">
-          <button class="menu-icon" type="button"></button>
-        </div>
-        <div class="title-bar-center">
-           <span class="title-bar-title ">Aaron LeCheminant</span>
-        </div>
-        <div class="title-bar-right">
-          <button class="menu-icon" type="button"></button>
-        </div>
+           <ul class="menu align-center">
+              <li><a href="#about" class="menu-link">About</a></li>
+              <li><a href="#projects" class="menu-link">Projects</a></li>
+              <li><a href="#contact" class="menu-link">Contact</a></li>
+              <li><a href="">Resume</a></li>
+           </ul>
       </div>
       <div class="grid-x image_container align-center align-middle">
          <div class="title_container text-center sand_gray">
@@ -29,7 +26,7 @@
             </div>
          </div>
       </div>
-      <div class="grid-x about_section">
+      <div class="grid-x about_section" id="about">
          <div class="about_content small-12 medium-6 columns ">
             <div class="content_image">
                <img src="./images/profile_mobile.jpg" alt="">
@@ -38,15 +35,15 @@
             <p>
                I am a problem solver. The more difficult the problem the harder I try to find the solution. After working in the automotive industry for several years, I decided to shift into a new career with even more critical thinking and diagnostic work. I've always had a heavy interest in technology and when I started coding for the first time, I fell in love. Now as a software developer, I aim to work as efficiently and effectively as I can to create or solve what is needed, utilizing the work ethic and collaborative skills from my previous work experience.
             </p>
-            <a href="">GET IN TOUCH</a>
+            <a href="mailto:aaronjlech@gmail.com">GET IN TOUCH</a>
             <a href="">RESUME</a>
          </div>
          <div class="columns medium-6 desktop_image">
          </div>
       </div>
       <div class="grid-x work_header sand_gray align-center align-middle">
-         <div class="work_header__content">
-            <h3>RECENT WORK</h3>
+         <div class="work_header__content" id="projects">
+            <h3>RECENT PROJECTS</h3>
          </div>
       </div>
       <div class="grid-x work_section align-center">
@@ -93,13 +90,13 @@
                <h4>Tech Used: </h4>
                <p>NODE.JS &#8226; MONGO DB &#8226; REACT &#8226; FOUNDATIONS</p>
                <ul class="menu align-center icons icon-top ">
-                 <li><a href="https://aaronjlech.github.io/brelyn-v2/" target="_blank"><i class="fa fa-link"></i> <span>LIVE</span></a></li>
+                  <li><a href="https://flipp-r.herokuapp.com/#/" target="_blank"><i class="fa fa-link"></i> <span>LIVE</span></a></li>
                  <li><a href="https://github.com/aaronjlech/brelyn-v2" target="_blank"><i class="fa fa-github"></i> <span>CODE</span></a></li>
                </ul>
             </div>
          </div>
       </div>
-      <footer class="footer sand_gray text-center">
+      <footer class="footer sand_gray text-center" id="contact">
          <h3>Contact</h3>
          <div class="footer_content">
             <a href="mailto:aaronjlech@gmail.com" target="_blank">

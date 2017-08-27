@@ -38,6 +38,33 @@ a {
    left: 0;
    transition: all .3s;
    @include boxShadow();
+   .mobile-button {
+      @include tabletBreakpoint() {
+         display: none;
+      }
+   }
+   .tablet-menu {
+      display: none;
+      @include tabletBreakpoint() {
+         display: -webkit-box;
+         display: -webkit-flex;
+         display: -ms-flexbox;
+         display: flex;
+      }
+   }
+   .mobile-menu {
+      @include tabletBreakpoint() {
+         display: none;
+      }
+   }
+      a{
+         padding: .3rem .5rem;
+         color: #FFF;
+         transition: all .3s;
+         &:hover {
+            opacity: .6;
+         }
+      }
 }
 .nav_hidden {
    transform: translate(0, -50px);
@@ -46,7 +73,9 @@ a {
 .image_container {
    @include bgCover('../images/engine-bg.jpeg', 100vh);
    background-position: right;
-   background-attachment: fixed;
+   @include tabletBreakpoint(){
+      background-attachment: fixed;
+   }
    font-size: 3em;
 }
 .title_container {
@@ -86,7 +115,7 @@ a {
    }
    @include tabletBreakpoint(){
       p{
-         font-size: 1.2em;
+         font-size: 1em;
          line-height: 2;
       }
    }
@@ -129,7 +158,9 @@ a {
 }
 .work_section {
    @include bgCover('../images/laptop-bg.jpeg', auto);
-   background-attachment: fixed;
+   @include tabletBreakpoint(){
+      background-attachment: fixed;
+   }
 }
 
 .work_card {
