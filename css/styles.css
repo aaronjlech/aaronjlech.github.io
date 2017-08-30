@@ -544,5 +544,12 @@ a {
     color: #000; }
   .footer .footer_content {
     margin: 0 auto; }
+    .footer .footer_content a {
+      display: block; }
+
+.codewars {
+  margin: 5px auto;
+  width: 30%;
+  min-width: 300px; }
 
 /*# sourceMappingURL=styles.css.map */

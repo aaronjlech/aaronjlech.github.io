@@ -201,5 +201,13 @@ a {
    }
    .footer_content{
       margin: 0 auto;
+      a {
+         display: block;
+      }
    }
+}
+.codewars{
+   margin: 5px auto;
+   width: 30%;
+   min-width: 300px;
 }
