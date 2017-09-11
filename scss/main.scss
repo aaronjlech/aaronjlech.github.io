@@ -140,7 +140,7 @@ a {
       border: 1px solid #FFF;
       letter-spacing: 2px;
       font-size: .8em;
-      width: 80%;
+      width: 100%;
       @include tabletBreakpoint(){
          width: 42%;
       }
