@@ -29,6 +29,15 @@ a {
    color: #fff;
    background: #000;
 }
+.menu{
+   a{
+      color: #FFF;
+      transition: all .3s;
+      &:hover {
+         opacity: .6;
+      }
+   }
+}
 
 .nav {
    background: $Primary;
@@ -59,11 +68,7 @@ a {
    }
       a{
          padding: .3rem .5rem;
-         color: #FFF;
-         transition: all .3s;
-         &:hover {
-            opacity: .6;
-         }
+
       }
 }
 .nav_hidden {
@@ -95,7 +100,6 @@ a {
    }
    a{
       color: #FFF;
-      text-decoration: underline;
    }
    .desktop_image{
       display: none;
@@ -130,10 +134,25 @@ a {
       letter-spacing: 4px;
    }
 
-   a {
-      margin-bottom: 10px;
+   li {
+      margin: 5px;
+      border: 1px solid #FFF;
       letter-spacing: 2px;
-      font-size: .7em;
+      font-size: .8em;
+      width: 80%;
+      @include tabletBreakpoint(){
+         width: 42%;
+      }
+      a{
+         padding: .7rem 0;
+         width: 100%;
+         &:hover{
+            background: #FFF;
+            color: #000;
+            transition: all .8s;
+            opacity: 1;
+         }
+      }
    }
 }
 .work_header {

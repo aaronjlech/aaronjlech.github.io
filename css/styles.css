@@ -392,6 +392,12 @@ a {
   color: #fff;
   background: #000; }
 
+.menu a {
+  color: #FFF;
+  transition: all .3s; }
+  .menu a:hover {
+    opacity: .6; }
+
 .nav {
   background: #28536C;
   position: fixed;
@@ -417,11 +423,7 @@ a {
     .nav .mobile-menu {
       display: none; } }
   .nav a {
-    padding: .3rem .5rem;
-    color: #FFF;
-    transition: all .3s; }
-    .nav a:hover {
-      opacity: .6; }
+    padding: .3rem .5rem; }
 
 .nav_hidden {
   transform: translate(0, -50px); }
@@ -451,8 +453,7 @@ a {
   .about_section {
     height: 100vh; } }
 .about_section a {
-  color: #FFF;
-  text-decoration: underline; }
+  color: #FFF; }
 .about_section .desktop_image {
   display: none; }
   @media (min-width: 640px) {
@@ -479,10 +480,23 @@ a {
   .about_content h3 {
     margin-top: 1em;
     letter-spacing: 4px; }
-  .about_content a {
-    margin-bottom: 10px;
+  .about_content li {
+    margin: 5px;
+    border: 1px solid #FFF;
     letter-spacing: 2px;
-    font-size: .7em; }
+    font-size: .8em;
+    width: 80%; }
+    @media (min-width: 640px) {
+      .about_content li {
+        width: 42%; } }
+    .about_content li a {
+      padding: .7rem 0;
+      width: 100%; }
+      .about_content li a:hover {
+        background: #FFF;
+        color: #000;
+        transition: all .8s;
+        opacity: 1; }
 
 .work_header {
   padding: 40px; }
