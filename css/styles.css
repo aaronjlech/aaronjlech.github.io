@@ -402,6 +402,7 @@ a {
   background: #28536C;
   position: fixed;
   width: 100%;
+  z-index: 1;
   top: 0;
   left: 0;
   transition: all .3s;
@@ -485,7 +486,7 @@ a {
     border: 1px solid #FFF;
     letter-spacing: 2px;
     font-size: .8em;
-    width: 80%; }
+    width: 100%; }
     @media (min-width: 640px) {
       .about_content li {
         width: 42%; } }
